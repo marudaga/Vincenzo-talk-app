@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카톡-찾기</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>Lte</span>
+            <i class="fas fa-wifi"></i>
+            <!-- To do wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+        <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>99%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+            <!--battery Icon-->
+            <!--Lightning Icon-->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">찾기</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span>
+            <span><a href="settings.html">
+                <i class="fas fa-cog fa-lg"></i></a></span>
+            <div class="screen-header__dot"></div>
+          </span>
+        </div>
+      </header>
+
+      <main class="main-screen">
+        <div class="icon-row">
+          <div class="icon-row__icon">
+            <i class="fas fa-qrcode"></i>
+            <span>QR Code</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="far fa-address-book"></i>
+            <span>Add by Contacts</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="fas fa-fingerprint"></i>
+            <span>Add by ID</span>
+          </div>
+          <div class="icon-row__icon">
+            <i class="far fa-envelope"></i>
+            <span>Invite</span>
+          </div>
+        </div>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">추천하는 친구</h6>
+            <span>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="css/screens/빈센조.jpg" 
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">빈센조</h4>
+                        <h6 class="user-component__subtitle">인자기가 한거야?</h6>
+                    </div>
+                </div>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="css/screens/빈센조.jpg" 
+                        class="user-component__avatar user-component__avatar"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">빈센조</h4>
+                            <h6 class="user-component__subtitle">인자기가 한거야?</h6>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>오픈 채팅</h4>
+                <span>오픈채팅방 가기
+                    <i class="fas fa-chevron-up fa-xs"></i></span>
+                
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#금가프라자</h5>
+                    <h6 class="open-post__hashtags">#금가프라자#건물사수#금찾기</h6>
+                    <div class="open-post__members">
+                        <img src="css/screens/금가프라자.jpg"/>
+                        <span class="open-post__member-count">금가프라자 가족</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="css/screens/금가프라자.jpg" />
+                        <div class="open-post__heart-count">
+                          <i class="fas fa-heart fa-xs"></i><span>77k</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+      </main>
+ 
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i></i>친구</a></li> 
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>채팅</a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i>찾기</a></li>
+                <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__dot"></div>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>더보기</a></li>
+        </li>
+        </ul>
+    </nav>
+    <script src="https://kit.fontawesome.com/f071e38faa.js" 
+    crossorigin="anonymous"></script> 
+</body>
+</html>

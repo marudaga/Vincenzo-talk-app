@@ -1,0 +1,10 @@
+:root {
+  --yellow: #fae100;
+  --horizontal-space: 15px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.3);
+  --graycolor: rgba(0, 0, 0, 0.3);
+  --topbottomcolor: rgba(0, 0, 0, 0.7);
+  --bac-co: rgb(77, 77, 77);
+  --tex-co: rgb(130, 130, 130);
+  --tex-bac: rgb(90, 90, 90);
+}

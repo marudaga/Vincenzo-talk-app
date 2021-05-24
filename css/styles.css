@@ -10,6 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-moblie.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -34,11 +35,13 @@ body {
   flex-direction: column;
   align-items: center;
   font-weight: 600;
+  font-size: 25px;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .welcome-header__title {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 40px;
 }
 .welcome-header-text {
   width: 60%;
@@ -48,6 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 #login-form input {
@@ -67,11 +71,11 @@ body {
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--main-border);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--bac-co);
   cursor: pointer;
   border-radius: 5px;
   padding: 20px 0px;
@@ -81,5 +85,5 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  font-size: 13px;
+  font-size: 20px;
 }

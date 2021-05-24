@@ -3,11 +3,10 @@
   display: block;
   background-color: #fafafa;
   padding: 15px 0px;
-font-size: 18px;
-margin-bottom: 10px;
-margin-bottom: 15px;
-margin-top:-10px;
-}
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: -10px;
 }
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
@@ -28,4 +27,43 @@ margin-top:-10px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
+}
+
+#splash-screen {
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+#splash-screen {
+  background-color: var(--bac-co);
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tex-co);
+  font-size: 250px;
+}
+.splash-screen__text {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  z-index: 11;
+  margin-top: -30px;
+  font-family: "Nanum Pen Script", cursive;
+  letter-spacing: 10px;
+  color: rgb(39, 39, 39);
+}
+
+@keyframes hideSplashScreen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

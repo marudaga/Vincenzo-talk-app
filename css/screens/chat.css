@@ -58,16 +58,68 @@
 
 .message__info {
   display: flex;
+  margin: 5px 0px;
   align-items: flex-end;
 }
 
 .message__bubble {
-  background-color: var(--tex-bac);
+  background-color: rgb(40, 40, 40);
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
   border-top-left-radius: 0px;
   margin-right: 5px;
+  color: var(--tex-co);
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 25px;
+  align-items: center;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+  right: 15px;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reply__column:last-child button {
+  background-color: var(--bac-co);
+  color: var(--tex-co);
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+  color: var(--tex-co);
 }
 
 .message__time,
@@ -77,10 +129,12 @@
 }
 .message-row--own {
   justify-content: flex-end;
+  animation: fadein2 4s linear;
 }
-
+.message__info {
+  animation: fadein 2s linear;
+}
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-right: 0px;
@@ -89,4 +143,29 @@
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadein2 {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
 }
